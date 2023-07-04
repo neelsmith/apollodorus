@@ -26,7 +26,7 @@ end
 md"""*Unhide the following cell to see the Julia environment*."""
 
 # ╔═╡ cd8016da-1a70-11ee-1613-8ffa3e4a34ca
-md"""# Compile and apply a parser"""
+md"""# Compile and use a parser"""
 
 # ╔═╡ ca2e9fbc-c4ff-4e20-bba9-9bca1937c2cf
 md"""
@@ -123,7 +123,7 @@ PolytonicGreek = "72b824a7-2b4a-40fa-944c-ac4f345dc63a"
 [compat]
 CitableBase = "~10.3.0"
 CitableCorpus = "~0.13.4"
-Kanones = "~0.18.0"
+Kanones = "~0.18.1"
 Orthography = "~0.21.2"
 PlutoUI = "~0.7.51"
 PolytonicGreek = "~0.18.5"
@@ -135,7 +135,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.9.1"
 manifest_format = "2.0"
-project_hash = "6d51bf9b61559dc38c1be0388ffae9c77c3dfc6f"
+project_hash = "c8ecfc0595f4607285a0cfddcaf38c1e43b8bfdc"
 
 [[deps.ANSIColoredPrinters]]
 git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
@@ -328,9 +328,9 @@ version = "0.9.3"
 
 [[deps.Documenter]]
 deps = ["ANSIColoredPrinters", "Base64", "Dates", "DocStringExtensions", "IOCapture", "InteractiveUtils", "JSON", "LibGit2", "Logging", "Markdown", "REPL", "Test", "Unicode"]
-git-tree-sha1 = "58fea7c536acd71f3eef6be3b21c0df5f3df88fd"
+git-tree-sha1 = "39fd748a73dce4c05a9655475e437170d8fb1b67"
 uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
-version = "0.27.24"
+version = "0.27.25"
 
 [[deps.Downloads]]
 deps = ["ArgTools", "FileWatching", "LibCURL", "NetworkOptions"]
@@ -447,9 +447,9 @@ version = "0.21.4"
 
 [[deps.Kanones]]
 deps = ["AtticGreek", "BenchmarkTools", "CSV", "CitableBase", "CitableCorpus", "CitableObject", "CitableParserBuilder", "CitableText", "Compat", "DataFrames", "Dates", "DelimitedFiles", "DocStringExtensions", "Documenter", "Downloads", "Glob", "HTTP", "OrderedCollections", "Orthography", "PolytonicGreek", "Query", "SplitApplyCombine", "StatsBase", "Test", "TestSetExtensions", "Unicode"]
-git-tree-sha1 = "71a83bdb2a20aa0fafbbb0a1ced5e7e120b30945"
+git-tree-sha1 = "805e09a7886743f85e4b3893d1da8f75542e6166"
 uuid = "107500f9-53d4-4696-8485-0747242ad8bc"
-version = "0.18.0"
+version = "0.18.1"
 
 [[deps.LaTeXStrings]]
 git-tree-sha1 = "f2355693d6778a178ade15952b7ac47a4ff97996"
