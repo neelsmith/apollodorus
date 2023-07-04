@@ -97,11 +97,10 @@ else
 	parses = parsetoken(str, p)
 	lines = length(parses) == 1 ?  ["**1** analysis for $(str)",""] : ["**$(length(parses))** analyses for $(str)",""]
 	for parse in parses
-		lexlabel = string("**", parse.lexeme, "**") #Kanones.lemmalabel(parse.lexeme, dict = lemmdict)
+		lexlabel = string("*", Kanones.lemmalabel(parse.lexeme, dict = lemmdict), "*") 
 		formlabel = parse.form |> greekForm |> label
 		push!(lines, string("- ", lexlabel, " : " , formlabel))
 	end
-
 	join(lines, "\n") |> Markdown.parse
 end
 
