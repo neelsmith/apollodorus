@@ -17,15 +17,33 @@ end
 # ╔═╡ 0ee6aa26-5248-4a3b-ab94-d55aac0a998c
 begin
 	using Kanones
-	using PlutoUI
+	using PlutoUI, HypertextLiteral
 	
 end
+
+# ╔═╡ 519a6234-7690-44f8-945e-3aebf9f5221b
+md"""*Notebook version*: **0.1.0**"""
 
 # ╔═╡ 5c3d6cbc-2005-11ee-0680-21d01affc69e
 md"""# Parse word list"""
 
+# ╔═╡ d13d26f0-8816-46d5-9f97-bbfc5314307b
+md"""#### Load word list"""
+
+# ╔═╡ 3badbac0-bcc9-4208-a3a2-842d3a0183c3
+md"""*Load a list of words from a text file*: $(@bind wordsfile FilePicker([MIME("text/*")]))"""
+
+# ╔═╡ 089d9fda-ad2b-4023-b181-927ff5abb37f
+wordlist = isnothing(wordsfile) ? [] : split(String(wordsfile["data"]), "\n")
+
+# ╔═╡ 01a99994-9995-440b-82f1-5fad6543209f
+md""" #### (Re)build a parser"""
+
 # ╔═╡ a3863cac-44bf-4c63-aa43-2a14c82ddae6
 md"""*Use this button to rebuild parser*: $(@bind reload Button("Rebuild parser"))"""
+
+# ╔═╡ 98e053f3-f08c-4995-bea2-7204d25b99fd
+md"""#### Results of parsing"""
 
 # ╔═╡ 61006099-5391-413a-8a33-fc09d82d30a3
 html"""
@@ -48,9 +66,11 @@ function kdata()
 end
 
 # ╔═╡ aa82af46-cfbd-4bab-b1d3-94b8d3861eb6
+# ╠═╡ show_logs = false
 ds = kdata()
 
 # ╔═╡ a94e6a7d-7a46-4f13-a735-e5d760e81d12
+"Compile Kanones parser from local dataset."
 function buildparser()
 	kdata() |> stringParser
 end
@@ -64,13 +84,65 @@ end
 # ╔═╡ b8715931-f2fc-4b6c-a396-6cecd7cd58fa
 md"""Built parser capable of analyzing **$(length(parser.entries))** distinct forms."""
 
+# ╔═╡ a868fc46-8004-498d-a6a9-357fc81a3a5f
+failedlist = begin
+	parsedlist = map(wordlist) do w
+		(w, parsetoken(string(w), parser))
+	end
+	failed = filter(pr -> isempty(pr[2]), parsedlist)
+	map(pr -> pr[1], failed)
+end
+
+# ╔═╡ a83ebbe3-73ba-4501-8639-62d7c29455ef
+if isempty(wordlist)
+	md""
+else
+	successes = length(wordlist) - length(failedlist)
+	md"""Results of parsing **$(length(wordlist))** forms: **$(successes)** / **$(length(failedlist))** parsed"""
+end
+
+# ╔═╡ 1dd35097-acf9-41d5-b767-cc5195fc58b6
+"Build a widget for selecting a range from a long list"
+function rangewidget(n)
+        PlutoUI.combine() do Child
+                @htl("""
+                <i>Show slice from list of <b>$(n)</b> failed analyses</i>
+
+                $([
+                        @htl("$(name): $(Child(name, NumberField(1:length(failedlist))))</li>")
+                        for name in ["start", "end"]
+                ])
+
+                """)
+        end
+end
+
+# ╔═╡ 66b5b46c-36cc-4daf-81b2-f8fb32306a5a
+if isempty(wordlist)
+	md""
+else
+	@bind rangevals confirm(rangewidget(length(failedlist)))
+end
+
+# ╔═╡ e71cdb23-29a7-4556-84b0-a03ccb1d183d
+if isempty(wordlist)
+        md""
+else
+    	failedmd = map(failedlist[rangevals[:start]:rangevals[:end]]) do s
+                "- " * s
+        end
+        Markdown.parse(join(failedmd, "\n"))
+end
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
+HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
 Kanones = "107500f9-53d4-4696-8485-0747242ad8bc"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
+HypertextLiteral = "~0.9.4"
 Kanones = "~0.18.1"
 PlutoUI = "~0.7.51"
 """
@@ -81,7 +153,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.9.1"
 manifest_format = "2.0"
-project_hash = "0981ba38bf01641e49400cf96030f5e1ba5725c5"
+project_hash = "a51b66201052edfa9fce6bf4d139d9d06ea0f101"
 
 [[deps.ANSIColoredPrinters]]
 git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
@@ -780,14 +852,25 @@ version = "17.4.0+0"
 """
 
 # ╔═╡ Cell order:
+# ╟─519a6234-7690-44f8-945e-3aebf9f5221b
 # ╟─0ee6aa26-5248-4a3b-ab94-d55aac0a998c
 # ╟─5c3d6cbc-2005-11ee-0680-21d01affc69e
+# ╟─d13d26f0-8816-46d5-9f97-bbfc5314307b
+# ╟─3badbac0-bcc9-4208-a3a2-842d3a0183c3
+# ╟─089d9fda-ad2b-4023-b181-927ff5abb37f
+# ╟─01a99994-9995-440b-82f1-5fad6543209f
 # ╟─a3863cac-44bf-4c63-aa43-2a14c82ddae6
 # ╟─b8715931-f2fc-4b6c-a396-6cecd7cd58fa
+# ╟─98e053f3-f08c-4995-bea2-7204d25b99fd
+# ╟─a83ebbe3-73ba-4501-8639-62d7c29455ef
+# ╟─66b5b46c-36cc-4daf-81b2-f8fb32306a5a
+# ╟─e71cdb23-29a7-4556-84b0-a03ccb1d183d
 # ╟─a1d15a1a-3b7a-4a60-ac84-e3cb43771df3
+# ╟─a868fc46-8004-498d-a6a9-357fc81a3a5f
 # ╟─61006099-5391-413a-8a33-fc09d82d30a3
-# ╠═693d3d45-764d-4b21-bfb3-9923cfae409e
+# ╟─693d3d45-764d-4b21-bfb3-9923cfae409e
 # ╟─aa82af46-cfbd-4bab-b1d3-94b8d3861eb6
 # ╟─a94e6a7d-7a46-4f13-a735-e5d760e81d12
+# ╟─1dd35097-acf9-41d5-b767-cc5195fc58b6
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
