@@ -1,5 +1,4 @@
 StemUrn|LexicalEntity|Stem|Gender|InflClass|Accent|Notes
-nounstems.n22100|lsj.n22100|γ|feminine|h_hs|stemaccented|
 nounstems.n115193|lsjx.n115193|χωρ|feminine|a_as|recessive|
 nounstems.n47735|lsjx.n47735|θαλασσ|feminine|a_as_short|recessive|
 nounstems.n65295|lsjx.n65295|μαχ|feminine|h_hs|recessive|
@@ -9,3 +8,5 @@ nounstems.n19540|lsjx.n19540|βασιλει|feminine|a_as|stemaccented|
 nounstems.n65265|lsjx.n65265|μαχαιρ|feminine|a_as_short|recessive|
 nounstems.n28036|lsjx.n28036|δορ|feminine|a_as|inflectionaccented|
 nounstems.n82758|lsjx.n82758|πετρ|feminine|a_as|recessive|
+nounstems.n62212|lsjx.n62212|λει|feminine|a_as|recessive|
+nounstems.n64915|lsjx.n64915|μανι|feminine|a_as|stemaccented|

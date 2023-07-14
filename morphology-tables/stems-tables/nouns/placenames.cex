@@ -1,5 +1,8 @@
 StemUrn|LexicalEntity|Stem|Gender|InflClass|Accent|Notes
 apollodorusplaces.messene|apollodoruslexemes.messene|μεσσην|feminine|h_hs|stemaccented|
 nounstems.n48603|lsjx.n48603|θηβ|feminine|h_hs_pl|recessive|
-nounstems.n105483|lsjx.n105483|Τροι|feminine|a_as|recessive|
+nounstems.n105483|lsjx.n105483|τροι|feminine|a_as|recessive|
+nounstems.n69086|lsjx.n69086|μυκην|feminine|h_hs|stemaccented|
+nounstems.n43509|lsjx.n43509|εὐβοι|feminine|a_as_short|recessive|
+
 
