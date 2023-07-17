@@ -30,3 +30,10 @@ end
 
 score1 = scorename("Achilles", apnames)
 score1[1]
+
+apnames[2]
+
+
+compare("Abdera", "Abdera", Levenshtein())
+
+Levenshtein()("Abdera", "Abdere")

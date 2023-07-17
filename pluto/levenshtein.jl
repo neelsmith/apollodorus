@@ -106,7 +106,7 @@ md"""**$(length(passingscores))** *names in Apollodorus matched HMT authority li
 
 # ╔═╡ a75b1e06-6bd5-40df-b272-3cd3a50c577f
 function writeresults()
-	outfile = joinpath(pwd() |> dirname, "named-entities", "personalname-candidate-ids.cex") 
+	outfile = joinpath(pwd() |> dirname, "named-entities", "personalname-candidate-ids-$(thresh).cex") 
 	outlines = ["Apollonius name|HMT name|Distance|URN"]
 
 	for nm in passingscores
@@ -124,12 +124,6 @@ begin
 	saveresults
 	writeresults()
 end
-
-# ╔═╡ 5051261b-f0d0-4b31-9ccf-caa3f5613734
-p = passingscores[1]
-
-# ╔═╡ d3e01b95-ef74-4d90-a303-e3724eb13849
-[p...]
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -427,11 +421,9 @@ version = "17.4.0+0"
 # ╠═802c2c38-9ae1-4a97-9688-b6fc43b326bd
 # ╟─57c3a706-24be-11ee-1e9d-931bc013c794
 # ╟─3aab579b-88e4-4f99-9800-25f070731fd5
-# ╠═1f5ea668-faed-4959-8585-17ce63d47201
-# ╠═8082c44b-7253-4f37-b94a-070bb38d9549
-# ╠═a75b1e06-6bd5-40df-b272-3cd3a50c577f
-# ╠═5051261b-f0d0-4b31-9ccf-caa3f5613734
-# ╠═d3e01b95-ef74-4d90-a303-e3724eb13849
+# ╟─1f5ea668-faed-4959-8585-17ce63d47201
+# ╟─8082c44b-7253-4f37-b94a-070bb38d9549
+# ╟─a75b1e06-6bd5-40df-b272-3cd3a50c577f
 # ╟─f4561fd2-fbd2-4a14-badf-cc32348b262f
 # ╟─531cbf65-1cce-468e-acf0-e455358e313d
 # ╟─2a1d5910-f90a-4192-8927-c9eb4565fd49
