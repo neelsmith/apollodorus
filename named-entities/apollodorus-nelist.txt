@@ -29,7 +29,7 @@ URN|Name
 |Admetus
 |Adonis
 |Adrastia
-|Adrastus
+urn:cite2:hmt:pers.v1:pers717|Adrastus
 |Aeacus
 |Aeaea
 |Aeetes
