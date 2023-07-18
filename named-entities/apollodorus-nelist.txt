@@ -294,7 +294,7 @@ urn:cite2:hmt:pers.v1:pers717|Adrastus
 |Batia
 |Baton
 |Bebryces
-|Bellerophon
+urn:cite2:hmt:pers.v1:pers720|Bellerophon
 |Belus
 |Benthesicyme
 |Benthesicyme's
@@ -741,7 +741,7 @@ urn:cite2:hmt:pers.v1:pers717|Adrastus
 |Glauce
 |Glaucippe
 |Glauconome
-|Glaucus
+urn:cite2:hmt:pers.v1:pers463|Glaucus
 |Glenus
 |Glorious
 |Gorge
