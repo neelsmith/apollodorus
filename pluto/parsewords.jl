@@ -76,6 +76,7 @@ function buildparser()
 end
 
 # ╔═╡ a1d15a1a-3b7a-4a60-ac84-e3cb43771df3
+# ╠═╡ show_logs = false
 parser = begin
 	reload
 	buildparser()
@@ -83,6 +84,9 @@ end
 
 # ╔═╡ b8715931-f2fc-4b6c-a396-6cecd7cd58fa
 md"""Built parser capable of analyzing **$(length(parser.entries))** distinct forms."""
+
+# ╔═╡ 4865e2ee-9e78-4033-a81e-bad748d3145a
+Kanones.tofile(parser, "/Users/nsmith/Desktop/apparse.txt", delimiter = ",")
 
 # ╔═╡ a868fc46-8004-498d-a6a9-357fc81a3a5f
 failedlist = begin
@@ -100,6 +104,9 @@ else
 	successes = length(wordlist) - length(failedlist)
 	md"""Results of parsing **$(length(wordlist))** forms: **$(successes)** / **$(length(failedlist))** parsed"""
 end
+
+# ╔═╡ 2b87e2ba-e3c7-4624-abf6-82bce23e9559
+
 
 # ╔═╡ 1dd35097-acf9-41d5-b767-cc5195fc58b6
 "Build a widget for selecting a range from a long list"
@@ -865,12 +872,14 @@ version = "17.4.0+0"
 # ╟─a83ebbe3-73ba-4501-8639-62d7c29455ef
 # ╟─66b5b46c-36cc-4daf-81b2-f8fb32306a5a
 # ╟─e71cdb23-29a7-4556-84b0-a03ccb1d183d
-# ╟─a1d15a1a-3b7a-4a60-ac84-e3cb43771df3
+# ╠═a1d15a1a-3b7a-4a60-ac84-e3cb43771df3
+# ╠═4865e2ee-9e78-4033-a81e-bad748d3145a
 # ╟─a868fc46-8004-498d-a6a9-357fc81a3a5f
 # ╟─61006099-5391-413a-8a33-fc09d82d30a3
-# ╟─693d3d45-764d-4b21-bfb3-9923cfae409e
+# ╠═693d3d45-764d-4b21-bfb3-9923cfae409e
 # ╟─aa82af46-cfbd-4bab-b1d3-94b8d3861eb6
-# ╟─a94e6a7d-7a46-4f13-a735-e5d760e81d12
+# ╠═a94e6a7d-7a46-4f13-a735-e5d760e81d12
+# ╠═2b87e2ba-e3c7-4624-abf6-82bce23e9559
 # ╟─1dd35097-acf9-41d5-b767-cc5195fc58b6
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
