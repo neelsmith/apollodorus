@@ -1,4 +1,5 @@
 StemUrn|LexicalEntity|Stem|Gender|InflClass|Accent|Notes
+
 nounstems.n2032|lsjx.n2032|ἀθλ|masculine|os_ou|recessive|
 nounstems.n48760|lsj.n48760|θηρι|neuter|os_ou|stemaccented|
 nounstems.n63212|lsj.n63212|λιθ|masculine|os_ou|recessive|
@@ -23,3 +24,13 @@ nounstems.n15198|lsjx.n15198|ἀρκτ|feminine|os_ou|recessive|
 nounstems.n20560|lsjx.n20560|βουκολι|neuter|os_ou|recessive|
 nounstems.n37470|lsjx.n37470|ἐξοδ|feminine|os_ou|recessive|
 nounstems.n46488|lsjx.n46488|ζῳ|neuter|os_ou|recessive|
+nounstems.n50000|lsjx.n50000|ἱερει|neuter|os_ou|stemaccented|
+nounstems.n62093|lsjx.n62093|λαφυρ|neuter|os_ou_pl|recessive|
+nounstems.n69469|lsjx.n69469|μυστηρι|neuter|os_ou|recessive|
+nounstems.n71288|lsjx.n71288|νυμφι|masculine|os_ou|stemaccented|
+nounstems.n71751|lsjx.n71751|ξυλ|neuter|os_ou|recessive|
+nounstems.n72682|lsjx.n72682|οἰστρ|masculine|os_ou|recessive|
+nounstems.n77006|lsjx.n77006|παλλαδι|neuter|os_ou|recessive|
+nounstems.n93812|lsjx.n93812|σημει|neuter|os_ou|stemaccented|
+nounstems.n100388|lsjx.n100388|συνεργ|neuter|os_ou|inflectionaccented|
+nounstems.n112441|lsjx.n112441|φρυν|masculine|os_ou|recessive|
