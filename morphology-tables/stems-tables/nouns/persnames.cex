@@ -26,8 +26,8 @@ apollodoruspns.peisidikh|apollodoruslexemes.peisidikh|πεισιδικ|feminine|
 apollodoruspns.periboia|apollodoruslexemes.periboia|περιβοι|feminine|a_as_short|recessive|
 apollodoruspns.podarkhs|apollodoruslexemes.podarkhs|ποδαρκ|masculine|hs_ou|stemaccented|
 apollodoruspns.proknh|apollodoruslexemes.proknh|προκν|feminine|h_hs|recessive|
-apollodoruspns.semelh|apollodoruslexemes.semelh|σεμελ|feminine|h_hs|stemaccent|
-apollodoruspns.thleboa|apollodoruslexemes.thleboa|τηλεβο|feminine|a_as|stemaccent|
+apollodoruspns.semelh|apollodoruslexemes.semelh|σεμελ|feminine|h_hs|stemaccented|
+apollodoruspns.thleboa|apollodoruslexemes.thleboa|τηλεβο|feminine|a_as|stemaccented|
 apollodoruspns.aithra|apollodoruslexemes.aithra|αἰθρ|feminine|a_as|recessive|
 apollodoruspns.augeas|apollodoruslexemes.augeas|αὐγε|masculine|as_ou|stemaccented|
 apollodoruspns.augh|apollodoruslexemes.augh|αὐγ|feminine|h_hs|recessive|
@@ -66,6 +66,7 @@ apollodoruspns.thlefassa|apollodoruslexemes.thlefassa|τηλεφασσ|feminine|
 apollodoruspns.philomhla|apollodoruslexemes.philomhla|φιλομηλ|feminine|a_as|stemaccented|
 apollodoruspns.chalkioph|apollodoruslexemes.chalkioph|χαλκιοπ|feminine|h_hs|stemaccented|
 apollodoruspns.chthonia|apollodoruslexemes.chthonia|χθονι|feminine|a_as|stemaccented|
+apollodoruspns.aigialeia|apollodoruslexemes.aigialeia|αἰγιαλει|feminine|a_as_short|recessive|
 
 apollodoruspns.proitos|apollodoruslexemes.proitos|προιτ|masculine|os_ou|recessive|
 apollodoruspns.thestios|apollodoruslexemes.thestios|θεστι|masculine|os_ou|recessive|
@@ -144,3 +145,25 @@ apollodoruspns.tlhpolemos|apollodoruslexemes.tlhpolemos|τληπολεμ|masculi
 apollodoruspns.fulakos|apollodoruslexemes.fulakos|φυλακ|masculine|os_ou|recessive|
 apollodoruspns.chthonios|apollodoruslexemes.chthonios|χθονι|masculine|os_ou|recessive|
 apollodoruspns.chromios|apollodoruslexemes.chromios|χρομι|masculine|os_ou|stemaccented|
+
+nounstems.n67909|lsjx.n67909|μινω|masculine|s_os|recessive|
+apollodoruspns.oinews|apollodoruslexemes.oinews|οἰν|masculine|eus_ews_oxytone|inflectionaccented|
+apollodoruspns.gorgwn|apollodoruslexemes.gorgwn|γοργ|feminine|wn_onos|inflectionaccented|
+apollodoruspns.krewn|apollodoruslexemes.krewn|κρε|masculine|wn_ontos|recessive|
+nounstems.n82928|lsjx.n82928|πηλ|masculine|eus_ews_oxytone|recessive|
+nounstems.n85106|lsjx.n85106|πολυνεικ|masculine|hs_ous|stemaccented|
+apollodoruspns.eurustheus|apollodoruslexemes.eurustheus|εὐρυσθ|masculine|eus_ews_oxytone|inflectionaccented|
+nounstems.n82661|lsjx.n82661|περσ|masculine|eus_ews_oxytone|inflectionaccented|
+nounstems.n57292|lsjx.n57292|κηφ|masculine|eus_ews_oxytone|inflectionaccented|
+nounstems.n84762|lsjx.n84762|πολυδευκ|masculine|hs_ous|stemaccented|
+nounstems.n105831|lsjx.n105831|τυδ|masculine|eus_ews_oxytone|inflectionaccented|
+nounstems.n27189|lsjx.n27189|διομηδ|masculine|hs_ous|stemaccented|
+nounstems.n48835|lsjx.n48835|θησ|masculine|eus_ews_oxytone|inflectionaccented|
+nounstems.n53637|lsjx.n53637|καστ|masculine|wr_oros|recessive|
+nounstems.n70658|lsjx.n70658|νηλ|masculine|eus_ews_oxytone|inflectionaccented|
+nounstems.n88017|lsjx.n88017|προμηθ|masculine|eus_ews_oxytone|inflectionaccented|
+nounstems.n61916|lsjx.n61916|λαομεδ|masculine|wn_ontos|stemaccented|
+apollodoruspns.lugkeus|apollodoruslexemes.lugkeus|λυγκ|masculine|eus_ews_oxytone|inflectionaccented|
+apollodoruspns.nukteus|apollodoruslexemes.nukteus|νυκτ|masculine|eus_ews_oxytone|inflectionaccented|
+apollodoruspns.pandiwn|apollodoruslexemes.pandiwn|πανδι|masculine|wn_onos|stemaccented|
+apollodoruspns.ferhs|apollodoruslexemes.ferhs|φερ|masculine|hs_htos|recessive|
