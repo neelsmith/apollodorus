@@ -673,10 +673,10 @@ urn:cite2:hmt:place.v1:place46|Ethiopians
 |Eumenides
 |Eumetes
 |Eumolpe
-|Eumolpus
-|Eumolpus's
+urn:cite2:hmt:pers.v1:pers628|Eumolpus
+urn:cite2:hmt:pers.v1:pers628|Eumolpus's
 |Eumon
-|Euneus
+urn:cite2:hmt:pers.v1:pers1300|Euneus
 |Eunice
 |Eunomia
 |Eupalamus
@@ -684,7 +684,7 @@ urn:cite2:hmt:place.v1:place46|Ethiopians
 |Euphrosyne
 |Eupinytus
 |Euripides
-|Europa
+urn:cite2:hmt:pers.v1:pers403|Europa
 |Europe
 |Eurotas
 |Eury
